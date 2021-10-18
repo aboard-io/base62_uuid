@@ -2,7 +2,7 @@ defmodule Base62UUID.Mixfile do
   use Mix.Project
 
   @version "2.0.2"
-  @github_url "https://github.com/jclem/base62_uuid"
+  @github_url "https://github.com/adampash/base62_uuid"
 
   def project do
     [
@@ -46,7 +46,7 @@ defmodule Base62UUID.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:base62, "~> 1.2.0"},
+      {:base62, "~> 1.2.0", github: "adampash/base62"},
       {:uuid, "~> 1.1.5"},
       {:ex_doc, "~> 0.19.1", only: [:dev]},
       {:excoveralls, "~> 0.10.3", only: [:test]}
